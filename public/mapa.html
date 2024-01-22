@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Animado</title>
+    <style>
+        *{
+            align-items: center;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            animation: backgroundChange 10s infinite;
+        }
+
+        @keyframes backgroundChange {
+            0%   {background-color: #f0f0f0;}
+            25%  {background-color: #e0e0e0;}
+            50%  {background-color: #d0d0d0;}
+            75%  {background-color: #e0e0e0;}
+            100% {background-color: #f0f0f0;}
+        }
+
+        .container {
+            width: 80%;
+            margin: 2em auto;
+            padding: 1em;
+            border: 5px solid transparent;
+            border-radius: 10px;
+            animation: borderFlash 5s infinite;
+        }
+
+        @keyframes borderFlash {
+            0%   {border-color: transparent;}
+            25%  {border-color: #ffaaaa;}
+            50%  {border-color: #ff0000;}
+            75%  {border-color: #ffaaaa;}
+            100% {border-color: transparent;}
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.9101155465933!2d-2.2118409999999997!3d38.58191765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd65e17050e0f8cf%3A0xa93e096a8651e967!2s02130%20Bogarra%2C%20Albacete!5e0!3m2!1ses!2ses!4v1705964232608!5m2!1ses!2ses" width="800" height="1200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+</body>
+</html>

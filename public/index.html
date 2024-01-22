@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Añadido para especificar la codificación UTF-8 -->
+    <style>
+        *{
+        align-items: center;
+        text-align: center;
+
+        }
+        head{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0 40px 0;
+        }
+
+        header{
+            padding: 60px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            margin-top: 100px;
+        }
+
+        #productos-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual ancho */
+            font-size: large;
+        }
+        
+        #productos-container img {
+            width: 68%; /* Ajusta el tamaño de las imágenes al ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+            gap: 0px; /* Espacio entre las imágenes */
+
+        }
+            
+        
+
+        li{
+            text-align: left;
+        }
+        li:hover{
+            color: chartreuse;
+        }
+
+        /* Estilo básico */
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Ocultar el submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu li:hover > .submenu {
+    display: block;
+}
+
+/* Estilo del submenú */
+.submenu li {
+    background-color: #444;
+}
+
+.submenu li a {
+    padding: 8px;
+}
+
+
+
+
+        
+    </style>
+    <title>Tienda Online</title>
+</head>
+<body>
+    <header>
+    <h1>Bienvenido a Nuestra Tienda Online</h1>
+</header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Menú</a> 
+                <ul class="submenu">
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="noticiasatom.html">Noticias + ATOMICAS</a></li>
+                    <li><a href="mapa.html">Ubicacion</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="productos-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

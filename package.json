@@ -1,0 +1,19 @@
+{
+  "name": "practica-web-scrapeer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "feedparser": "^2.2.10",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2"
+  }
+}
